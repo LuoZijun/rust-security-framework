@@ -38,3 +38,10 @@ pub mod transform;
 pub mod trust;
 #[cfg(target_os = "macos")]
 pub mod trust_settings;
+
+#[cfg(feature = "OSX_10_14")]
+pub mod protocol_types;
+#[cfg(feature = "OSX_10_14")]
+pub mod protocol_options;
+#[cfg(feature = "OSX_10_14")]
+pub mod protocol_metadata;

@@ -1,6 +1,7 @@
 [package]
 name = "security-framework-sys"
 version = "0.4.1"
+edition = "2018"
 authors = ["Steven Fackler <sfackler@gmail.com>", "Kornel <kornel@geekhood.net>"]
 license = "MIT/Apache-2.0"
 description = "Apple `Security.framework` low-level FFI bindings"
@@ -21,3 +22,5 @@ OSX_10_10 = ["OSX_10_9"]
 OSX_10_11 = ["OSX_10_10"]
 OSX_10_12 = ["OSX_10_11"]
 OSX_10_13 = ["OSX_10_12"]
+OSX_10_14 = ["OSX_10_13"]
+

@@ -126,6 +126,19 @@ pub const kSSLClientCertRequested: SSLClientCertificateState = 1;
 pub const kSSLClientCertSent: SSLClientCertificateState = 2;
 pub const kSSLClientCertRejected: SSLClientCertificateState = 3;
 
+#[cfg(feature = "OSX_10_14")]
+pub type SSLCiphersuiteGroup = c_int;
+#[cfg(feature = "OSX_10_14")]
+pub const kSSLCiphersuiteGroupDefault: SSLCiphersuiteGroup          = 0;
+#[cfg(feature = "OSX_10_14")]
+pub const kSSLCiphersuiteGroupCompatibility: SSLCiphersuiteGroup    = 1;
+#[cfg(feature = "OSX_10_14")]
+pub const kSSLCiphersuiteGroupLegacy: SSLCiphersuiteGroup           = 2;
+#[cfg(feature = "OSX_10_14")]
+pub const kSSLCiphersuiteGroupATS: SSLCiphersuiteGroup              = 3;
+#[cfg(feature = "OSX_10_14")]
+pub const kSSLCiphersuiteGroupATSCompatibility: SSLCiphersuiteGroup = 4;
+
 extern "C" {
     pub fn SSLContextGetTypeID() -> ::core_foundation_sys::base::CFTypeID;
     pub fn SSLCreateContext(

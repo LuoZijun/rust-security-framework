@@ -31,7 +31,7 @@ use security_framework_sys::trust::{
 #[cfg(any(feature = "OSX_10_12", target_os = "ios"))]
 use std::ops::Deref;
 #[cfg(any(feature = "OSX_10_12", target_os = "ios"))]
-use {cvt, key};
+use crate::{cvt, key};
 
 declare_TCFType! {
     /// A type representing a certificate.

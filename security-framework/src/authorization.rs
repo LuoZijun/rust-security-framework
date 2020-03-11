@@ -6,7 +6,7 @@
 ///   arguments.
 /// * AuthorizationCopyRightsAsync
 /// * Provide constants for well known item names
-use base::{Error, Result};
+use crate::base::{Error, Result};
 use core_foundation::base::{CFTypeRef, TCFType};
 use core_foundation::bundle::CFBundleRef;
 use core_foundation::dictionary::{CFDictionary, CFDictionaryRef};
